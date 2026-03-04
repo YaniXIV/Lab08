@@ -16,7 +16,6 @@ public class City {
     public String getProvinceName(){
         return this.province;
     }
-
     // To make "contains" work properly in tests
     @Override
     public boolean equals(Object o) {
@@ -26,6 +25,7 @@ public class City {
         return this.city.equals(cityObj.city)
                 && this.province.equals(cityObj.province);
     }
+	//comment 
 
     @Override
     public int hashCode() {
