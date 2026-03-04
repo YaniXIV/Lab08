@@ -4,9 +4,15 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 public class CustomListTest {
 
-@test
-	public void failTest(){
-		var foo = false;
-		assertTrue(foo);
+	@Test
+public void testHasCity() {
+CustomList list = new CustomList();
+City calgary = new City("Calgary", "AB");
+list.addCity(calgary);
+// This will fail initially because hasCity() doesn't
+exist
+assertTrue(list.hasCity(calgary));
+
 	}
 }
+
